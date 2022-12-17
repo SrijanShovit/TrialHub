@@ -1,3 +1,16 @@
+import React from 'react'
+
+const index = () => {
+  return (
+    <div>index</div>
+  )
+}
+
+export default index
+
+/**
+Example of Typescript code for default next app with tailwind:
+
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -84,3 +97,6 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+
+ */
