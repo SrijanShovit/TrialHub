@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from './components/navbar'
 
 const index = () => {
   return (
-    <div>index</div>
+    <div className="font-manrope">
+    <Navbar/>
+    </div>
   )
 }
 
