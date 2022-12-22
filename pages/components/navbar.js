@@ -12,7 +12,7 @@ function Navbar() {
   }
 
   return (
-    <div className=" fixed w-full h-14 border-b px-4 flex items-center justify-between">
+    <div className=" fixed w-full h-14 border-b px-4 flex items-center justify-between bg-white">
       <Link href="/"><h1 className="font-semibold text-lg md:text-base">TRIALSHOPPY</h1></Link>
 
       <button
