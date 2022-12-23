@@ -9,22 +9,22 @@ const Layout = ({ children }) => {
 
   const EmployeeSubpages = [
     {
-      name: "all",
+      name: "All",
       route: "",
     },
     {
-      name: "administrators",
+      name: "Administrators",
       route: "/admin",
     },
   ];
   const TaskSubpages = [
     {
-      name: "taskSubpage1",
+      name: "Task Page",
       route: "",
     },
     {
-      name: "taskSubpage2",
-      route: "/tsp2",
+      name: "TaskSubpage1",
+      route: "/tsp1",
     },
   ];
 
@@ -40,11 +40,11 @@ const Layout = ({ children }) => {
   }
 
   return (
-    <div className="">
+    <div className="h-screen flex flex-col">
       <Navbar />
-      <div className="flex flex-row bg-pink-600">
+      <div className="flex flex-row flex-1">
         <Sidebar sideProps={sideProps} pageName={pageName} />
-        <main>{children}</main>
+        <main className="w-full">{children}</main>
       </div>
     </div>
   );

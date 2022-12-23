@@ -7,12 +7,16 @@ const Sidebar = ({ sideProps, pageName }) => {
   const path = router.pathname;
 
   return (
-    <div className="flex flex-col bg-green-600">
+    <div className="flex flex-col">
       {sideProps?.map((el) => (
         <div key={Math.random().toString()}>
           <Link
             href={`${pageName + el.route}`}
-            className={path === `${pageName + el.route}` ? "underline" : null}
+            className={
+              path === `${pageName + el.route}`
+                ? "bg-light-primary w-full inline-block px-4 py-1"
+                : "w-full inline-block px-4 py-1"
+            }
           >
             {el.name}
           </Link>
