@@ -1,12 +1,20 @@
 import React from 'react'
+import { firestore } from '../firebase/clientApp';
+import { collection} from 'firebase/firestore';
 
+
+const dbInstance = collection(firestore, 'hi');
+console.log(dbInstance)
 const index = () => {
+
   return (
     <div>index</div>
   )
 }
 
 export default index
+
+
 
 /**
 Example of Typescript code for default next app with tailwind:
